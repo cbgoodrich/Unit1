@@ -4,4 +4,5 @@
 
 km = float(input("Number of kilometers "))
 miles = km*(3.107/5.0)
-print("There are", miles, "in 5.0 kilometers")
+
+print("There are", round(miles, 3), "in 5.0 kilometers")

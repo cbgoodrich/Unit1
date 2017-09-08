@@ -6,10 +6,10 @@ side1 = float(input("Enter side A: "))
 side2 = float(input("Enter side B: "))
 side3 = float(input("Enter side C: "))
 
-if side1 + side2 > side3 and side1 + side3 > side2 and side2 + side3 > side1:
-    print("You've got a triangle!")
-else:
-    print("You don't have a triangle :'(")
+bigSide = max(side1, side2, side3)
+smallSide = min(side1, side2, side3)
 
+perimeter = side1 + side2 + side3
+middleSide = perimeter - bigSide - smallSide
 
-
+print(middleSide + smallSide > bigSide)
